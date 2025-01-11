@@ -3,9 +3,8 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>org.test</groupId>
 	<artifactId>feign-eureka-hello-server</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<packaging>jar</packaging>
 
 	<name>feign-eureka-hello-server</name>
@@ -13,8 +12,8 @@
 
 	<parent>
 		<groupId>org.test</groupId>
-		<artifactId>feign-eureka</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<artifactId>feign-eureka-demo</artifactId>
+		<version>1.0.0</version>
 		<relativePath>..</relativePath> <!-- lookup parent from repository -->
 	</parent>
 
@@ -23,6 +22,11 @@
 	</properties>
 
 	<dependencies>
+		<dependency>
+			<groupId>org.test</groupId>
+			<artifactId>common</artifactId>
+			<version>1.0.0</version>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -38,6 +42,12 @@
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.36</version>
+			<optional>true</optional>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
